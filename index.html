@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup_form</title>
+    <style>
+        #Register_Form{
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-right: auto;
+            margin-left:auto ;
+        }
+        .input_element{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px;
+        }
+        h1{
+            text-align: center;
+        }
+        .input_value{
+            width: 100%;
+        }
+        #chech_term{
+            margin-top: 12px;
+            margin-bottom: 18px;
+        }
+    </style>
+  </head>
+  <body style="background-color: lightblue;">
+    <form id="Register_Form">
+        <h1>Signup</h1>
+      <div>
+        <p class="input_element">Full name:</p>
+        <input class="input_value" type="text" name="Full-name" placeholder="Full name" />
+      </div>
+      <div>
+        <p class="input_element">Email:</p>
+        <input class="input_value" type="email" name="email" placeholder="email">
+      </div>
+      <div>
+        <p class="input_element">Password:</p>
+        <input class="input_value" type="password" name="password" placeholder="password">
+      </div>
+      <div>
+        <p class="input_element">Confirm password:</p>
+        <input class="input_value" type="password" name="confirm" placeholder="Confirm password">
+      </div>
+      <div>
+        <p class="input_element">Gender:</p>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+      </div>
+      <div>
+        <p class="input_element">Security Question:</p>
+        <select class="input_value">
+            <option value="first">What was your first pet name?</option>
+            <option value="second">
+                What was your first school name?
+            </option>
+            <option value="third">
+                What is father name?
+            </option>
+            <option value="fourth">What is your mother name?</option>
+        </select>
+      </div>
+      <div>
+        <textarea class="input_value" name="answer"cols="27" rows="5"></textarea>
+      </div>
+      <div>
+        <input type="checkbox" name="chech_term" id="chech_term">I agree t accept the term and conditions
+      </div>
+      <div>
+        <input type="submit" name="submit" value="register">
+      </div>
+    </form>
+  </body>
+</html>
